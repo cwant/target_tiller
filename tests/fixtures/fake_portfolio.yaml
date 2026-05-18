@@ -1,0 +1,12 @@
+portfolio:
+  name: My Account
+  cash: 20000
+  holdings:
+    - symbol: WTF
+      amount: 25000.0
+    - symbol: LOL
+      amount: 15000.0
+    - symbol: HUH
+      amount: 30000.0
+    - symbol: WHY
+      amount: 10000.0

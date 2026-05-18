@@ -1,0 +1,12 @@
+- portfolio_name: 'ABC123'
+  nickname: 'Accumulating wealth'
+  amount: 1000.0
+  action: 'buy_only'
+- portfolio_name: 'XYZ987'
+  nickname: 'Distributing wealth'
+  amount: -3000.0
+  action: 'sell_only'
+- portfolio_name: 'ABBA90210'
+  nickname: 'Balancing wealth'
+  amount: 0.0
+  action: 'buy_sell'

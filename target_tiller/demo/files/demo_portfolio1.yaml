@@ -1,0 +1,14 @@
+portfolio:
+  name: 'ABC123'
+  cash: 20000.0
+  holdings:
+    - symbol: LOL
+      amount: 500.0
+    - symbol: HUH
+      amount: 500.0
+    - symbol: WHY
+      amount: 600.0
+    - symbol: FUN
+      amount: 100
+    - symbol: NGL
+      amount: 1000.0

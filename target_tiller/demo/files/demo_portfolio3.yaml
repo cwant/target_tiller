@@ -1,0 +1,14 @@
+portfolio:
+  name: 'ABBA90210'
+  cash: 20000.0
+  holdings:
+    - symbol: LOL
+      amount: 5000.0
+    - symbol: HUH
+      amount: 5000.0
+    - symbol: WHY
+      amount: 5000.0
+    - symbol: FUN
+      amount: 5000
+    - symbol: NGL
+      amount: 5000.0

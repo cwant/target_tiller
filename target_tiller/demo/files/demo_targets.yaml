@@ -1,0 +1,10 @@
+targets:
+  - symbol: LOL
+    name: 'LOL corp'
+    weight: 0.2
+  - symbol: HUH
+    name: 'HUH fund'
+    weight: 0.3
+  - symbol: WHY
+    name: 'WHY not industries'
+    weight: 0.5

@@ -1,0 +1,14 @@
+div.rounded {
+  border-radius: 25px;
+  background: #f8f8ff;
+  padding: 20px;
+  #width: 200px;
+  #height: 150px;
+}
+
+.buy {
+  background-color: #ccffcc;
+}
+.sell {
+  background-color: #ffcccc;
+}

@@ -1,0 +1,10 @@
+targets:
+  - symbol: WTF
+    name: "BANK OF WTF"
+    weight: 0.4
+  - symbol: LOL
+    name: "LOL COMMUNICATIONS"
+    weight: 0.35
+  - symbol: HUH
+    name: "HUH CORP"
+    weight: 0.25

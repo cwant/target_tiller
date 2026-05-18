@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "target_tiller"
+dynamic = ["version"]
+dependencies = ["jupyter", "python-dotenv"]
+authors = [{name = "Chris Want"}]
+keywords = ["cli", "jupyter", "investing", "investments"]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: Jupyter",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "pylint", "ruff"]
+
+[project.scripts]
+target_tiller = "target_tiller.__main__:main"
+
+[tool.setuptools.package-data]
+target_tiller = ["demo/*.ipynb", "demo/files/*.yaml"]
+
+[tool.setuptools.dynamic]
+version = {attr = "target_tiller.__version__"}
+
+[tool.pytest]
+pythonpath = ["."]
+addopts = ["--cov", "target_tiller"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-annotations
+    "ANN",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # flake8-bandit (security checks)
+    "S",
+    # flake8-comprehensions
+    "C4",
+    # flake8-quotes
+    "Q",
+    # PEP8 naming
+    "N",
+    # Pylint
+    "PL",
+    # Ruff-specific rules
+    "RUF",
+    # isort
+    "I",
+    # "ALL"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"] # unused import okay here
+"*.ipynb" = ["F811"] # import the same thing okay (e.g., in different cells)
+"test_*.py" = ["S101", # assert okay in test suite
+               "PLR2004", # magic values okay in test suite
+               "ANN"] # No type annotations for test suite
+"test_demo.py" = ["PLR0915"] # Integration test can be long
+
+[tool.pylint.messages_control]
+# Enable or disable specific messages
+disable = [
+    "W0511", # fixme
+    "R0903", # too-few-public-methods
+]

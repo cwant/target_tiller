@@ -1,0 +1,8 @@
+- portfolio_name: '90120XYZ'
+  nickname: 'Nest Egg'
+  amount: 3000
+  action: 'buy_only'
+- portfolio_name: '12345ABC'
+  nickname: 'In the mattress'
+  amount: 0
+  action: 'buy_sell'
