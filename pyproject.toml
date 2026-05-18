@@ -32,7 +32,9 @@ dev = ["pytest", "pytest-cov", "pytest-mock", "pylint", "ruff"]
 target_tiller = "target_tiller.__main__:main"
 
 [tool.setuptools.package-data]
-target_tiller = ["demo/*.ipynb", "demo/files/*.yaml"]
+target_tiller = ["output/*.css",
+                 "demo/*.ipynb",
+                 "demo/files/*.yaml"]
 
 [tool.setuptools.dynamic]
 version = {attr = "target_tiller.__version__"}
