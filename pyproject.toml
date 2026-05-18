@@ -26,7 +26,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 [project.optional-dependencies]
-dev = ["pytest", "pytest-cov", "pylint", "ruff"]
+dev = ["pytest", "pytest-cov", "pytest-mock", "pylint", "ruff"]
 
 [project.scripts]
 target_tiller = "target_tiller.__main__:main"
