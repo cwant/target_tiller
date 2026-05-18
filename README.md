@@ -26,7 +26,7 @@ to your targets).
 
 If you would like to know more about portfolio rebalancing, I
 would recommend you search for information on the "Couch Potato Strategy",
-which uses perioding rebalancing to grow wealth over time, typically
+which uses periodic rebalancing to grow wealth over time, typically
 through the acquisition of index funds.
 
 **Warning: This software only suggests purchases and sales, based
