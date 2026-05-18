@@ -31,6 +31,9 @@ dev = ["pytest", "pytest-cov", "pytest-mock", "pylint", "ruff"]
 [project.scripts]
 target_tiller = "target_tiller.__main__:main"
 
+[project.urls]
+Homepage = "https://github.com/cwant/target_tiller"
+
 [tool.setuptools.package-data]
 target_tiller = ["output/*.css",
                  "demo/*.ipynb",

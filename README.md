@@ -17,7 +17,7 @@ grow your portfolio (for example through monthly contributions), or start
 funding your life through periodic withdrawls? If you have the time,
 this software might be a good fit for your financial journey.
 
-![Yo](docs/assets/target_tiller-example.png)
+![An example of some transactions](https://raw.githubusercontent.com/cwant/target_tiller/refs/heads/main/docs/assets/target_tiller-example.png)
 
 This is why this software is called a "tiller": it steers your asset
 proportions toward your targets, rather than teleporting them there

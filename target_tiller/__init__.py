@@ -2,7 +2,7 @@
 any stage of your investment journey.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 from .holding import Holding
 from .portfolio import Portfolio
