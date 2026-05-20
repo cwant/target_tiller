@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# No yaml or csv files in the root directory
+/*.yaml
+/*.csv
