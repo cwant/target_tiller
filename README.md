@@ -79,8 +79,8 @@ TargetTiller has three rebalancing options to reach your goals:
 ## Getting it to work
 
 First you should ensure the requirements are installed.
-A `requirements.txt` file is supplied, you should install
-the package requirements from there, usually in a virtual
+A `pyproject.toml` file is supplied, and you should install
+the package and requirements from there, usually in a virtual
 environment. Google will tell you how to do this if you
 don't know already, but typically it looks like this:
 
@@ -91,18 +91,26 @@ virtualenv --no-download venv
 # Activate it, or it's not good for anything (you're prompt will change)
 source venv/bin/activate
 
-# Install the requirements
-pip install -r requirements.txt
+# Install the package and requirements
+pip install .
+
+# Or if you want the optional dev requirements too ...
+
+pip install ".[dev]"
 
 # With the virtual environment activated, do some things ...
-# E.g., run the test suite
-pytest
 
 # E.g., start jupyter and play with the demo notebook
-jupyter-notebook &
+jupyter-notebook --no-browser &
 
 # E.g., run the demo script (--help for options)
 python -m target_tiller --demo
+
+# E.g., if you have the dev requirements installed, you can run the test suite,
+# or check out the linting.
+pytest
+pylint target_tiller
+ruff check
 
 # Deactivate the virtual environment
 deactivate
